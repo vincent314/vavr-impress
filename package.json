@@ -1,0 +1,52 @@
+{
+  "name": "impress.js",
+  "version": "0.6.0",
+  "description": "It's a presentation framework based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.",
+  "main": "js/impress.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/impress/impress.js.git"
+  },
+  "keywords": [
+    "presentation",
+    "slides",
+    "slideshow",
+    "css3",
+    "transitions",
+    "transforms",
+    "browser"
+  ],
+  "author": "Bartek Szopka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartaz/impress.js/issues"
+  },
+  "scripts": {
+    "lint": "jshint js/impress.js *.js test/bootstrap.js && jscs js/impress.js *.js test/bootstrap.js --preset=jquery",
+    "test": "karma start --single-run",
+    "test:dev": "karma start",
+    "test:sauce": "karma start karma.conf-sauce.js",
+    "pug": "pug src/pug/index.pug -o ./",
+    "sass": "node-sass src/scss/impress-kotlin.scss -o css/ && postcss css/*.css --use autoprefixer -d css/",
+    "compile": "npm run pug && npm run sass",
+    "serve": "serve -p 3000 | livereload ./ -d"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.0.1",
+    "chrome": "0.1.0",
+    "jscs": "2.11.0",
+    "jshint": "2.9.1",
+    "karma": "0.13.22",
+    "karma-chrome-launcher": "1.0.1",
+    "karma-cli": "1.0.0",
+    "karma-qunit": "1.0.0",
+    "karma-sauce-launcher": "1.0.0",
+    "livereload": "^0.6.2",
+    "node-sass": "^4.5.2",
+    "postcss-cli": "^4.0.0",
+    "pug": "^2.0.0-rc.1",
+    "pug-cli": "^1.0.0-alpha6",
+    "qunitjs": "2.0.0-rc1",
+    "serve": "^5.1.5"
+  }
+}

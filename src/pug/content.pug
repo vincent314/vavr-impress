@@ -1,0 +1,33 @@
+- var currentX= -2800, currentY = -2800;
+- function move(x,y){currentX += x; currentY += y;}
+
+#title.step(data-x='1000', data-y='1000', data-scale='10')
+    h1 VAVR
+    h2 anciennement <b>Javaslang</b>
+
+    p
+        i.fa.fa-external-link
+        a vavr.io
+
+#introduction.step(data-x=currentX, data-y=currentY, data-scale='3')
+    ul
+        li librairie Java 8+
+        li améliore le language
+        li code robuste et élégant
+        li programmation fonctionnelle
+        li collections immutables
+
+- move(2500,-1000)
+#features.step(data-x=currentX, data-y=currentY, data-scale='2')
+    h1 Features
+    ul
+        li Collections
+        li Tuples
+        li Options
+        li Try
+        li Either
+        li Future
+        li Matcher
+        li Validation
+
+#overview.step(data-x='3000', data-y='1500', data-scale='10')

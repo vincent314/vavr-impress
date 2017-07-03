@@ -1,0 +1,94 @@
+@import "./common.scss";
+
+code {
+  font-family: monospace;
+  font-size: 75%;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+h1 {
+  font-size: 140%;
+  //text-shadow: 10px 10px 20px #2b303b;
+}
+
+.cf {
+  font-size: 70%;
+  color: lighten($text-color, 30%);
+  padding-left: 1em;
+}
+
+#title {
+  h1, img {
+    display: inline;
+    margin: 0;
+    font-family: sans-serif;
+  }
+
+  p {
+    font-size: 80%;
+  }
+
+  #logo {
+    height: 150px;
+  }
+
+}
+
+#introduction {
+  @include animate-fadein('h1');
+  @include animate-li();
+}
+
+#features {
+  @include animate-fadein('h1');
+  @include animate-li();
+}
+
+#features2 {
+  @include animate-fadein('h1');
+  @include animate-li();
+}
+
+#features3 {
+  @include animate-li();
+}
+
+#javascript {
+  @include animate-li();
+}
+
+#situation {
+  @include animate-fadein('h1');
+  @include animate-li();
+}
+
+#resource {
+  @include animate-fadein('h1');
+  @include animate-li();
+}
+
+#hello-world {
+  @include animate-fadein('h1');
+  @include animate-fadein('pre');
+}
+
+#val-var {
+  @include animate-fadein('h1');
+  @include animate-fadein('h3');
+  @include animate-fadein('pre');
+}
+
+#data-class{
+  @include animate-fadein('h1');
+  @include animate-fadein('h3');
+  @include animate-fadein('pre');
+
+  width: 1500px;
+
+  code {
+    font-size: .5em;
+  }
+}
